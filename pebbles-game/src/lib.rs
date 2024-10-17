@@ -1,14 +1,22 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
+#![no_std]
+
+use gstd::{};
+use pebbles_game_io::*;
+
+static mut PEBBLES_GAME: Option<GameState> = None;
+
+#[no_mangle]
+extern "C" fn Init() {
+    //You code here 
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+#[no_mangle]
+extern "C" fn Handle() {
+    //You code here 
+}
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+
+#[no_mangle]
+extern "C" fn State() {
+    //You code here 
 }
